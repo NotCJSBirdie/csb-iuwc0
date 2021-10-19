@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Functions 2021</title>
+  </head>
+  <body>
+    <div class="div1">
+      <h1>Javascript Functions 2021</h1>
+    </div>
+    <div class="div2">
+      <p>
+        A JavaScript function is a block of code designed to perform a
+        particular task.
+      </p>
+
+      <p>
+        A JavaScript function is executed when "something" invokes it (calls
+        it).
+      </p>
+    </div>
+    <div class="div3">
+      <h2>JavaScript Function Syntax</h2>
+      <p>
+        A JavaScript function is defined with the function keyword, followed by
+        a name, followed by parentheses ().
+      </p>
+
+      <p>
+        Function names can contain letters, digits, underscores, and dollar
+        signs (same rules as variables).
+      </p>
+
+      <p>
+        The parentheses may include parameter names separated by commas:
+        (parameter1, parameter2, ...)
+      </p>
+
+      <p>
+        The code to be executed, by the function, is placed inside curly
+        brackets: {}
+      </p>
+      <div id="functionsyntax">
+        <p>function name(parameter1, parameter2, parameter3) {</p>
+        <p>// code to be executed</p>
+        <p>}</p>
+      </div>
+    </div>
+    <div class="div4">
+      <h2>Function Return</h2>
+      <p>This is an example of a function with a return statement</p>
+      <p id="p1"></p>
+      <script>
+        function myfunction(x) {
+          return x + 5;
+        }
+        document.getElementById("p1").innerHTML = myfunction(10);
+      </script>
+    </div>
+    <div class="div5">
+      <h2>The () Operator Invokes the Function</h2>
+      <p>
+        Using the example above, toCelsius refers to the function object, and
+        toCelsius() refers to the function result.
+      </p>
+
+      <p>
+        Accessing a function without () will return the function object instead
+        of the function result.
+      </p>
+    </div>
+    <div class="div6">
+      <h2>Functions Used as Variable Values</h2>
+      <p>
+        Functions can be used the same way as you use variables, in all types of
+        formulas, assignments, and calculations.
+      </p>
+      <p id="p2"></p>
+      
+      </button>
+      <script>
+        document.getElementById("p2").innerHTML =
+          "The number is.." + myfunction1(11);
+
+        function myfunction1(y) {
+          return y + 50;
+        }
+      </script>
+    </div>
+  </body>
+</html>
